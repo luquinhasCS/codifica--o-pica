@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</head><script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
 <body>
-    <h1>Loucura</h1>
+    <style>
+    .loco{
+        color:yellow;
+        
+    }
+
+    .loca{color:black}
+
+    #afj{
+        width:auto;
+        height: 100px;
+        border-radius: 20px;
+        background-image: linear-gradient(orange, red);
+        text-align: center;
+    }
+    </style>
+    
+    <h1 id="afj">Loucura</h1>
+    
+    
 </body>
+<script>
+        
+        $('#afj').mouseenter(function(){
+            $('#afj').removeClass('loca')
+            $('#afj').addClass('loco')    
+    })
+
+    $('#afj').mouseleave(function(){
+        $('#afj').removeClass('loco')
+        $('#afj').addClass('loca')    
+    })
+        
+    </script>
 </html>
